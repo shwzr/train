@@ -1,0 +1,99 @@
+/* Corrected by https://github.com/Ybucaille */
+
+body {
+margin: 0;
+padding: 0;
+background-color: rgb(248, 249, 250);
+}
+
+.navbar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+font-family: Segoe UI;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+transition: all 0.3s ease-in-out;
+}
+
+.feuille {
+background-color: white;
+margin: 80px 600px 80px 500px;
+padding: 60px 86px 40px 86px;
+font-family: Arial;
+border: 2px solid #EDEFF0;
+}
+
+.liens {
+color: #0CB2ED;
+text-decoration: none;
+font-weight: bold;
+}
+
+.space-between {
+padding-bottom: 4%;
+}
+
+h2,h3{
+font-weight: normal;
+}
+
+.footer {
+margin-top: 20px;
+padding: 20px 12%;
+background: #333;
+color: white;
+display: flex;
+font-family: Segoe UI;
+}
+
+.link-style{
+color: white;
+padding-bottom: 10px;
+}
+
+.twitter{
+padding-right: 20px;
+}
+
+.mentions{
+position: absolute;
+margin-left: 1300px;
+text-decoration: none;
+color: white;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.mentions{
+position: absolute;
+margin-left: 180px;
+text-decoration: none;
+color: white;
+}
+
+.feuille {
+background-color: white;
+margin: 80px 600px 80px 120px;
+padding: 60px 86px 40px 86px;
+font-family: Arial;
+border: 2px solid #EDEFF0;
+}
+
+}`

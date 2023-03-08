@@ -1,0 +1,17 @@
+html: 70
+css: 50
+php: 10
+yaml: 70
+python: 45
+
+vscode: 80
+sublimetext: 100
+git: 80
+a: 0
+b: 0
+
+conf-switch: 80
+conf-router: 75
+conf-camera: 70
+conf-srv-windows: 80
+conf-srv-linux: 70
