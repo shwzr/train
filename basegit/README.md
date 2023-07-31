@@ -2,49 +2,43 @@
 
 ## 📝 Description
 
-> Ceci est une aide perso pour apprendre les bases de Git, y compris l'initialisation d'un dépôt, les commandes de base pour commiter et pousser des modifications, ainsi que la gestion des branches.
+> Voici un guide simple et concis pour utiliser Git, de l'installation à la gestion de vos projets.
 
 ## 🚀 Procédure
 
-1. Pour commencer, vous devez d'abord initialiser un dépôt. Lorsque vous initialisez un dépôt Git, Git crée un dossier caché dans le dossier de votre projet qui stockera toutes les informations.
-```
-git init
-```
-
-2. Ensuite, vous devez utiliser la commande suivante pour ajouter les modifications de votre projet à l'index :
-```
-git add .
+**I. Configurer Git:**
+```python
+git config --global user.name <username>
+git config --global user.email <your@mail.com>
 ```
 
-3. Vous pouvez attribuer un commit (sorte de commentaire) à vos modifications en utilisant la commande suivante :
-```
-git commit -m "first commit"
+
+**II. Préparation du dépôt:**
+```python
+git init                                                             # Initialiser un dépôt Git
+git add .                                                            # Préparer des fichiers pour le push
+git status                                                           # Vérifier l'état du dépôt distant
+git commit -m "<Message de commit>"                                  # Préparer un commentaire pour le push
+git remote add origin <https://github.com/user/depot.git>            # Relier votre dépôt à un dépôt distant
 ```
 
-4. Pour envoyer vos modifications vers un dépôt distant, vous devez ajouter le dépôt distant avec la commande suivante :
-```
-git remote add origin https://github.com/nom-utilisateur/nom-dépôt.git
-```
-
-5. Pour définir la branche principale de votre dépôt, vous devez utiliser la commande suivante :
-```
-git branch -M main
-```
-
-6. Ensuite, pour transférer vos modifications vers le dépôt distant, utilisez la commande suivante :
-```
-git push -u origin main
+**III. Gestion des branches:**
+```python
+git branch -M <nom-de-la-branche>                                    # Renommer votre branche
+git branch <nom-de-la-branche>                                       # Créer une branche
+git checkout <nom_de_la_branche>                                     # Changez de branche
+git checkout -b <nom_de_la_branche>                                  # Créer et changer de branche
+git branch -d <nom_de_la_branche>                                    # Supprimer une branche
+git merge <nom_de_la_branche>                                        # Fusionner votre vranche à une autre
 ```
 
-7. Si vous voulez créer une nouvelle branche, utilisez la commande suivante :
-```
-git branch nom-de-la-branche
+**IV. Synchronisation avec le dépôt distant:**
+```python
+git push origin <nom_de_la_branche>                                  # Envoyer vos modifications à un dépôt distant
+git push origin <nom_de_la_branche>                                  # Récupérer les modificaions de votre dépôt distant
 ```
 
-8. Pour basculer vers cette nouvelle branche, utilisez la commande suivante :
-```
-git checkout nom-de-la-branche
-```
+Notes
 
 ## 👤 Auteur
 
